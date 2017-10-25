@@ -4,8 +4,13 @@ var projects = document.querySelector("#projectsPlace");
 var subMenu = document.querySelector(".rotate ul");
 var about = document.querySelector("#about");
 var btnAway = document.querySelector("#btnAway");
-var indice = document.querySelector(".indice")
-var circle = document.querySelector(".circle")
+var indice = document.querySelector(".indice");
+var circle = document.querySelector(".circle");
+var canvas = document.querySelector('#myCanvas');
+var trabajos = document.querySelector('#trabajos');
+var reading1 = document.querySelector('#reading1');
+var divMenu = document.querySelector('#divMenu');
+var img1 = document.querySelector('#img1')
 
 askMe.style.opacity="0";
 askMe.style.transform="translateX(100%)";
@@ -65,6 +70,9 @@ function proyectos (e){
 	contact.style.transition= '3s';
 	indice.style.transition = '3s';
 	indice.style.transform = 'translate(0%)';
+	myCanvas.style.opacity = '0.09';
+	myCanvas.style.transition = '2s';
+
 	let pos = 0;
 	let num = 0;
 	var id = setInterval(gridX, 30);
@@ -86,4 +94,13 @@ function proyectos (e){
 
 		}
 	}
+	setTimeout(function(){
+		divMenu.style.display = 'none';
+		trabajos.style.display = 'flex';
+	}, 1000);
+
+	setTimeout(function(){
+		img1.style.opacity = '1';
+		img1.style.transition = '2s ease-out';
+	}, 1100);
 }

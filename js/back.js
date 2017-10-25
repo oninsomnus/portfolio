@@ -1,3 +1,4 @@
+var mesh = {};
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerHeight, 0.1, 1000);
 
@@ -22,6 +23,8 @@ window.addEventListener('resize', function(){
 })
 
 
+
+
 addCubes();
 
 var geometry2 = new THREE.BoxGeometry( 5000, 0, 5000 );
@@ -38,7 +41,7 @@ var light3 = new THREE.SpotLight( 0xffffff, 2,500 );
 light.castShadow = true;
 light.shadow.mapSize.width = 1024;
 light.shadow.mapSize.height = 1024;
-light.penumbra = 0.05;
+light.penumbra = 1;
 light.distance = 300;
 light2.position.set( 459, 90, 100 );
 light3.position.set( 0, 80, 636 );
@@ -78,8 +81,6 @@ function addCubes() {
         }
     };
 }
-
-
 
 camera.position.z = 300;
 camera.position.x = 50;
