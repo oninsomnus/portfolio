@@ -21,21 +21,30 @@ function display () {
 	askMe.style.transition="3s";
 	askMe.style.transform="translateX(1rem)";
 	askMe.style.opacity="1";
-	var ola = 19;
-	ola++
-	var ola2 = ola-1;
-	id = setInterval(background, 30);
+	var ola2 = 100;
+	var ejem = false;
+	
+	id = setInterval(background, 10);
 	function background(){
-		if (ola2 >= 18 || ola2 < 100){
+	
+		if (ola2 >= 18 && ejem === false && ola2 <= 99){
 			ola2++;
 		}
-		if (ola2 == 100){
-			ola2--;
+		else if(ola2 >= 99){
+			ejem = true;
+			ola2--
 		}
+		else if (ejem === true && ola2 >= 19){
+			ola2--
+		}
+		else if (ejem === true && ola2 < 19){
+			ejem = false;
+		}
+	
 		console.log(ola2);
 
 
-		circle.style.background= 'linear-gradient(45deg, rgba(136,100,221,1) 0%,rgba(120,145,213,1)100%)';
+		circle.style.background= 'linear-gradient(45deg, rgba(136,100,221,1) 0%,rgba(120,145,213,1)'+ola2+'%)';
 	}
 
 	}
@@ -44,6 +53,7 @@ function displayFalse(){
 	askMe.style.transition="3s";
 	askMe.style.transform="translateX(100%)";
 	askMe.style.opacity="0";
+	//circle.style.background= 'linear-gradient(45deg, rgba(136,100,221,1) 0%,rgba(120,145,213,1)100%)'
 	clearInterval(id);
 }
 
