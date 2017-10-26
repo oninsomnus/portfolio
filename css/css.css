@@ -301,7 +301,7 @@ path.svg{
 }
 
 .textos{
-	padding: 1rem;
+	padding: 1rem 4rem 1rem 1rem;
 }
 
 .textos h1{
@@ -319,14 +319,15 @@ path.svg{
 	font-size: 0.8rem;
 	margin-bottom: 2rem;
 	letter-spacing: 0.1rem;
+	position: relative;
 }
 
 .textos h3:after{
 	content: '';
 	position: absolute;
-	top: 46%;
-	left: 51.5%;
-	right: 46%;
+	bottom: -36%;
+    left: 0;
+    right: 95%;
 	height: 0em;
 	border-top: 1px solid #FFD455;
 	z-index: -1;
@@ -335,4 +336,24 @@ path.svg{
 .textos p{
 	font-family: 'Work Sans', sans-serif;
 	font-size: 0.9rem;
+	color: #7b7b7b;
+}
+
+#texto1{
+	opacity: 0;
+}
+
+.works svg{
+    background: #8864DD;
+    position: relative;
+    float: right;
+    width: 8%;
+    padding: 0.3rem 0.5rem 0.3rem 0.8rem;
+    opacity: 0.7;
+	transform: translate(-1.7rem, -8rem);
+}
+
+.work svg:hover{
+	background: #6b4eb1;
+	transition: 2s ease-out;
 }
