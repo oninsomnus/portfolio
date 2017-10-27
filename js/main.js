@@ -4,7 +4,7 @@ var projects = document.querySelector("#projectsPlace");
 var subMenu = document.querySelector(".rotate ul");
 var about = document.querySelector("#about");
 var btnAway = document.querySelector("#btnAway");
-var indice = document.querySelector(".indice");
+var indiceBtn = document.querySelector(".indiceBtn");
 var circle = document.querySelector(".circle");
 var canvas = document.querySelector('#myCanvas');
 var trabajos = document.querySelector('#trabajos');
@@ -13,7 +13,9 @@ var divMenu = document.querySelector('#divMenu');
 var img1 = document.querySelector('#img1');
 var txt1 = document.querySelector('#texto1');
 var flecha = document.querySelector('.flecha');
-var imagenDiv = document.querySelector('#imagenDiv')
+var imagenDiv = document.querySelector('#imagenDiv');
+var lsIndice = document.querySelector('#lsIndice');
+var cerrar = document.querySelector('.cerrar');
 
 askMe.style.opacity="0";
 askMe.style.transform="translateX(100%)";
@@ -23,6 +25,8 @@ pen.addEventListener("mouseover", display, false);
 pen.addEventListener("mouseout", displayFalse);
 projects.addEventListener('click', proyectos);
 flecha.addEventListener('click', imagenes);
+indiceBtn.addEventListener('click', listaTrabajos);
+cerrar.addEventListener('click', cerrado);
 
 var id;
 var show = 0;
@@ -71,8 +75,8 @@ function proyectos (e){
 	subMenu.style.transition= "3s";
 	subMenu.style.transform= "rotate(-90deg) translate(25%)";
 	contact.style.transition= '3s';
-	indice.style.transition = '3s';
-	indice.style.transform = 'translate(0%)';
+	indiceBtn.style.transition = '3s';
+	indiceBtn.style.transform = 'translateY(0%)';
 	myCanvas.style.opacity = '0.09';
 	myCanvas.style.transition = '2s';
 
@@ -113,12 +117,22 @@ function proyectos (e){
 function imagenes(){
 	show++;
 	if (show === 1){
-		console.log("hola");
 		imagenDiv.innerHTML = "<img src='./img/readingkingdom_two.png'>";
 		show = -1;
 	}
 	else if (show === 0){
-		console.log("chao");
 		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
 	}
+}
+
+function listaTrabajos(){
+	lsIndice.style.transform = 'translateY(0)';
+	lsIndice.style.transition = '2s ease-out';
+	console.log('hola');
+}
+
+function cerrado(){
+	lsIndice.style.transform = 'translateY(146%)';
+	lsIndice.style.transition = '2s ease-out';
+	indiceBtn.style.transform = 'translateY(-200%)';
 }

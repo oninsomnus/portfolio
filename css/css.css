@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 canvas{
 	width: 100%;
@@ -252,7 +252,7 @@ path.svg{
 	margin-right: 2rem;
 }
 
-.indice{
+.indiceBtn{
 	font-family: 'Work Sans', sans-serif;
 	color: #7891D5;
 	font-size: 1.2rem;
@@ -266,12 +266,12 @@ path.svg{
 	z-index: 1;
 }
 
-.indice:hover{
+.indiceBtn:hover{
 	color: #FFD455;
 	transition: 2s;	
 }
 
-.indice:after{
+.indiceBtn:after{
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -283,7 +283,7 @@ path.svg{
 	transition: 2s;
 }
 
-.indice:hover:after{
+.indiceBtn:hover:after{
 	border-top: 1px solid #FFD455;
 	transition: 2s;
 }
@@ -356,4 +356,61 @@ path.svg{
 .work svg:hover{
 	background: #6b4eb1;
 	transition: 2s ease-out;
+}
+
+.indexlista{
+	vertical-align: middle;
+	text-align: left;
+	width: 100%;
+	bottom: 0;
+	background: rgba(107, 78, 177, 0.5);
+	padding: 2rem 0 2rem 8rem;
+	position: absolute;
+	z-index: 10;
+	transform: translateY(146%);
+}
+
+.listaIndex h3{
+	color: #fff;
+	font-size: 1rem;
+	line-height: 200%;
+	letter-spacing: 0.1rem;
+	font-family: 'Work Sans', sans-serif;
+	opacity: 0.4;
+	width: 33%;
+	text-align: right;
+	background: -webkit-linear-gradient(#FFD455, #e14761);
+	background: -o-linear-gradient(#FFD455, #e14761);
+	background: linear-gradient(#FFD455, #e14761); 
+	background-size: 0 100%;
+	background-position: 1rem 1.95rem;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.listaIndex h3:hover{
+	opacity: 1;
+	background-size: 100% 100%;
+	transition: all 1s;
+}
+
+.cerrar svg{
+	width: 12%;
+	fill: white;
+	margin-left: 0.2rem;
+	cursor: pointer;
+}
+
+.cerrar{
+	background: -webkit-linear-gradient(#FFF, #e14761);
+	background: -o-linear-gradient(#FFF, #e14761);
+	background: linear-gradient(#FFF, #ffffff);
+    background-size: 0% 1%;
+    background-repeat: no-repeat;
+    background-position: 0 16%;
+}
+
+.cerrar:hover{
+    background-size: 21% 1%;
+    transition: 1.5s cubic-bezier(.37,.11,.16,.73);
 }
