@@ -128,11 +128,15 @@ function imagenes(){
 function listaTrabajos(){
 	lsIndice.style.transform = 'translateY(0)';
 	lsIndice.style.transition = '2s ease-out';
-	console.log('hola');
+	indiceBtn.style.opacity = '0';
+	indiceBtn.style.transition = '1s';
+	indiceBtn.style.transform = 'translateY(-100%)';
 }
 
 function cerrado(){
 	lsIndice.style.transform = 'translateY(146%)';
 	lsIndice.style.transition = '2s ease-out';
-	indiceBtn.style.transform = 'translateY(-200%)';
+	indiceBtn.style.opacity = '1';
+	indiceBtn.style.transition = '4s';
+	indiceBtn.style.transform = 'translateY(0%)';
 }
