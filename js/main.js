@@ -24,7 +24,7 @@ var project5 = document.querySelector('#project5');
 var project6 = document.querySelector('#project6');
 var project7 = document.querySelector('#project7');
 var project8 = document.querySelector('#project8');
-
+var primer = true;
 askMe.style.opacity="0";
 askMe.style.transform="translateX(100%)";
 
@@ -115,8 +115,8 @@ function displayFalse(){
 
 function proyectos (e){
 	e.preventDefault();
-	imagenDiv.style.opacity = '0';
-	imagenDiv.style.transition = '2s';
+	imagenDiv.style.opacity = '1';
+	imagenDiv.style.transition = '3s';
 	subMenu.style.transition= "3s";
 	subMenu.style.transform= "rotate(-90deg) translate(25%)";
 	contact.style.transition= '3s';
@@ -244,18 +244,23 @@ function scroll(e){
 }
 
 function secciones(){
+	console.log(primer)
+	if (primer === true){
+	primer = false;
 		setTimeout(function(){
 		divMenu.style.display = 'none';
 		trabajos.style.display = 'flex';
+		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
+		imagenDiv.style.opacity = '0';
 	}, 1000);
 
 	setTimeout(function(){
 		imagenDiv.style.opacity = '1';
-		imagenDiv.style.transition = '2s ease-out';
+		imagenDiv.style.transition = '1s ease-out';
 		txt1.style.opacity = '1';
 		txt1.style.transition = '2s ease-out';
-	}, 1100);
-
+	}, 2000);}
+else if (primer === false){
 	if (seccion === 1){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
@@ -319,6 +324,7 @@ function secciones(){
 
 	else if (seccion === 8){
 		imagenDiv.innerHTML = "<img src='./img/readingkingdom_two.png'>";		
+	}
 	}
 }
 
