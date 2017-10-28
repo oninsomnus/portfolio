@@ -24,9 +24,14 @@ var project5 = document.querySelector('#project5');
 var project6 = document.querySelector('#project6');
 var project7 = document.querySelector('#project7');
 var project8 = document.querySelector('#project8');
+var tituloProj = document.querySelector('#tituloProj')
+var subtitutloProj = document.querySelector('#subtitutloProj')
+var textoProj = document.querySelector('#textoProj')
 var primer = true;
+
 askMe.style.opacity="0";
 askMe.style.transform="translateX(100%)";
+
 
 
 addEventListener('wheel', scroll);
@@ -246,12 +251,15 @@ function scroll(e){
 function secciones(){
 	console.log(primer)
 	if (primer === true){
+
 	primer = false;
 		setTimeout(function(){
 		divMenu.style.display = 'none';
 		trabajos.style.display = 'flex';
 		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
 		imagenDiv.style.opacity = '0';
+		project1.style.backgroundSize = '100% 100%';
+		project1.style.opacity = '1';
 	}, 1000);
 
 	setTimeout(function(){
@@ -260,6 +268,7 @@ function secciones(){
 		txt1.style.opacity = '1';
 		txt1.style.transition = '2s ease-out';
 	}, 2000);}
+
 else if (primer === false){
 	if (seccion === 1){
 		imagenDiv.style.opacity = '1';
@@ -270,6 +279,7 @@ else if (primer === false){
 		project1.style.transition = 'all 1s';
 		project2.style.backgroundSize = '0% 100%';
 		project2.style.opacity = '0.4';
+		tituloProj.innerHTML = titulosh1[0];
 			
 		show = 0;
 	}
@@ -285,6 +295,7 @@ else if (primer === false){
 		project2.style.backgroundSize = '100% 100%';
 		project2.style.opacity = '1';
 		project2.style.transition = 'all 1s';
+		tituloProj.innerHTML = titulosh1[1];
 		show = -1;
 	}
 
@@ -463,3 +474,8 @@ function project8out(){
 		project8.style.opacity = '0.4';
 	}
 }
+
+
+var titulosh1 = ['Reading Kingdom', 'AGT', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', ''];
+var subtitulosh3 = ['Editorial Design', 'UI/UX Design, Visual Identity', 'UI Design'];
+var textosp = [];
