@@ -343,6 +343,10 @@ path.svg{
 	opacity: 0;
 }
 
+#imagenDiv {
+	opacity: 0;
+}
+
 .works svg{
     background: #8864DD;
     position: relative;
