@@ -423,6 +423,10 @@ path.svg{
     transition: 1.5s cubic-bezier(.37,.11,.16,.73);
 }
 
+#subtitutloProj{
+	font-weight: 500;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1100px){
 	.listaIndex h3{
 		width: 50%;
