@@ -160,6 +160,51 @@ function imagenes(){
 	show++;
 	if (seccion === 1){
 		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/agt.gif'>";
+			show = +1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/agtlo.png'>";
+		}
+
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/agt1.png'>";
+			show+1;
+		}
+
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/agt2.png'>";
+			show+1;
+		}
+
+		else if (show === 4){
+			imagenDiv.innerHTML = "<img src='./img/agt3.png'>";
+			show+1;
+		}
+
+		else if (show === 5){
+			imagenDiv.innerHTML = "<img src='./img/agt5.png'>";
+			show+1;
+		}
+
+		else if (show === 6){
+			imagenDiv.innerHTML = "<img src='./img/agt6.png'>";
+			show+1;
+		}
+
+		else if (show === 7){
+			imagenDiv.innerHTML = "<img src='./img/agt7.png'>";
+			show+1;
+		}
+
+		else if (show === 8){
+			imagenDiv.innerHTML = "<img src='./img/agt8.png'>";
+			show = -1;
+		}
+	}
+
+	if (seccion === 2){
+		if (show === 1){
 			imagenDiv.innerHTML = "<img src='./img/readingkingdom_two.png'>";
 			show = -1;
 		}
@@ -168,13 +213,113 @@ function imagenes(){
 		}
 	}
 
-	if (seccion === 2){
+	if (seccion === 3){
 		if (show === 1){
-			imagenDiv.innerHTML = "<img src='./img/random-01.png'>";
+			imagenDiv.innerHTML = "<img src='./img/tropi2.png'>";
+			show = +1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/tropi1.png'>";
+		}
+
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/tropi3.png'>";
+			show+1;
+		}
+
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/tropi4.png'>";
+			show = -1;
+		}
+	}
+
+	if (seccion === 4){
+		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/xerode-03.png'>";
 			show = -1;
 		}
 		else if (show === 0){
-			imagenDiv.innerHTML = "<img src='./img/random-02.png'>";
+			imagenDiv.innerHTML = "<img src='./img/xerode-02.png'>";
+		}
+	}
+
+	if (seccion === 5){
+		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/yform2.png'>";
+			show = +1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/yform1.png'>";
+		}
+
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/yform3.png'>";
+			show+1;
+		}
+
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/yform4.png'>";
+			show = -1;
+		}
+	}
+
+	if (seccion === 6){
+		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/works-03.png'>";
+			show = +1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/works-06.png'>";
+		}
+
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/works-02.png'>";
+			show+1;
+		}
+
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/works-10.png'>";
+			show = -1;
+		}
+	}
+
+	if (seccion === 7){
+		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/works-05.png'>";
+			show = -1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
+		}
+	}
+
+	if (seccion === 8){
+		if (show === 1){
+			imagenDiv.innerHTML = "<img src='./img/works-09.png'>";
+			show = +1;
+		}
+		else if (show === 0){
+			imagenDiv.innerHTML = "<img src='./img/works-08.png'>";
+		}
+
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/works-04.png'>";
+			show+1;
+		}
+
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/works-07.png'>";
+			show+1;
+		}
+
+		else if (show === 4){
+			imagenDiv.innerHTML = "<img src='./img/works-15.png'>";
+			show+1;
+		}
+
+		else if (show === 5){
+			imagenDiv.innerHTML = "<img src='./img/works-16.png'>";
+			show = -1;
 		}
 	}
 }
@@ -251,8 +396,8 @@ function scroll(e){
 				console.log('seccion :'+seccion);
 				momento = 0;
 			}, 300);
-			if (seccion >= 7){
-				seccion = 7;
+			if (seccion >= 8){
+				seccion = 0;
 			}
 		}
 	}
@@ -285,7 +430,7 @@ function secciones(){
 		setTimeout(function(){
 		divMenu.style.display = 'none';
 		trabajos.style.display = 'flex';
-		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
+		imagenDiv.innerHTML = "<img src='./img/agtlo.png'>";
 		imagenDiv.style.opacity = '0';
 		project1.style.backgroundSize = '100% 100%';
 		project1.style.opacity = '1';
@@ -302,14 +447,27 @@ else if (primer === false){
 	if (seccion === 1){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
-		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
+		imagenDiv.innerHTML = "<img src='./img/agtlo.png'>";
 		project1.style.backgroundSize = '100% 100%';
 		project1.style.opacity = '1';
 		project1.style.transition = 'all 1s';
 		project2.style.backgroundSize = '0% 100%';
 		project2.style.opacity = '0.4';
+		project3.style.backgroundSize = '0% 100%';
+		project3.style.opacity = '0.4';
+		project4.style.backgroundSize = '0% 100%';
+		project4.style.opacity = '0.4';
+		project5.style.backgroundSize = '0% 100%';
+		project5.style.opacity = '0.4';
+		project6.style.backgroundSize = '0% 100%';
+		project6.style.opacity = '0.4';
+		project7.style.backgroundSize = '0% 100%';
+		project7.style.opacity = '0.4';
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
 		tituloProj.innerHTML = titulosh1[0];
-		subtitutloProj.innerHTML = subtitulosh3[1]
+		subtitutloProj.innerHTML = subtitulosh3[1];
+		textoProj.innerHTML = textosp[0];
 
 			
 		show = 0;
@@ -318,7 +476,7 @@ else if (primer === false){
 	else if (seccion === 2){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
-		imagenDiv.innerHTML = "<img src='./img/random-01.png'>";
+		imagenDiv.innerHTML = "<img src='./img/readingkingdom_cover.png'>";
 		project1.style.backgroundSize = '0% 100%';
 		project1.style.opacity = '0.4';
 		project3.style.backgroundSize = '0% 100%';
@@ -326,33 +484,55 @@ else if (primer === false){
 		project2.style.backgroundSize = '100% 100%';
 		project2.style.opacity = '1';
 		project2.style.transition = 'all 1s';
+		project4.style.backgroundSize = '0% 100%';
+		project4.style.opacity = '0.4';
+		project5.style.backgroundSize = '0% 100%';
+		project5.style.opacity = '0.4';
+		project6.style.backgroundSize = '0% 100%';
+		project6.style.opacity = '0.4';
+		project7.style.backgroundSize = '0% 100%';
+		project7.style.opacity = '0.4';
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
 		tituloProj.innerHTML = titulosh1[1];
 		subtitutloProj.innerHTML = subtitulosh3[0];
+		textoProj.innerHTML = textosp[0];
 		show = -1;
 	}
 
 	else if (seccion === 3){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
-		imagenDiv.innerHTML = "<img src='./img/random-02.png'>";
+		imagenDiv.innerHTML = "<img src='./img/tropi1.png'>";
 		project1.style.backgroundSize = '0% 100%';
 		project1.style.opacity = '0.4';
 		project2.style.backgroundSize = '0% 100%';
 		project2.style.opacity = '0.4';
-		project2.style.transition = 'all 1s';
 		project3.style.backgroundSize = '100% 100%';
 		project3.style.opacity = '1';
 		project3.style.transition = 'all 1s';
 		project4.style.backgroundSize = '0% 100%';
 		project4.style.opacity = '0.4';
-		console.log('hola, soy la seccion 3 de la funcion secciones')
+		project5.style.backgroundSize = '0% 100%';
+		project5.style.opacity = '0.4';
+		project6.style.backgroundSize = '0% 100%';
+		project6.style.opacity = '0.4';
+		project7.style.backgroundSize = '0% 100%';
+		project7.style.opacity = '0.4';
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
+		tituloProj.innerHTML = titulosh1[2];
+		subtitutloProj.innerHTML = subtitulosh3[2];
+		textoProj.innerHTML = textosp[0];
 		show = -1;
 	}
 
 	else if (seccion === 4){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
-		imagenDiv.innerHTML = "<img src='./img/random-03.png'>";
+		imagenDiv.innerHTML = "<img src='./img/xerode-02.png'>";
+		project1.style.backgroundSize = '0% 100%';
+		project1.style.opacity = '0.4';
 		project2.style.backgroundSize = '0% 100%';
 		project2.style.opacity = '0.4';
 		project3.style.backgroundSize = '0% 100%';
@@ -363,13 +543,24 @@ else if (primer === false){
 		project4.style.transition = 'all 1s';
 		project5.style.backgroundSize = '0% 100%';
 		project5.style.opacity = '0.4';
-		console.log('hola, soy la seccion 4 de la funcion secciones')
+		project6.style.backgroundSize = '0% 100%';
+		project6.style.opacity = '0.4';
+		project7.style.backgroundSize = '0% 100%';
+		project7.style.opacity = '0.4';
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
+		tituloProj.innerHTML = titulosh1[3];
+		subtitutloProj.innerHTML = subtitulosh3[2];
+		textoProj.innerHTML = textosp[0];
 		show = -1;
 	}
 
 	else if (seccion === 5){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
+		project1.style.backgroundSize = '0% 100%';
+		project1.style.opacity = '0.4';
+		project2.style.backgroundSize = '0% 100%';
 		project3.style.backgroundSize = '0% 100%';
 		project3.style.opacity = '0.4';
 		project4.style.backgroundSize = '0% 100%';
@@ -380,14 +571,26 @@ else if (primer === false){
 		project5.style.transition = 'all 1s';
 		project6.style.backgroundSize = '0% 100%';
 		project6.style.opacity = '0.4';
-		imagenDiv.innerHTML = "<img src='./img/random-04.png'>";
-		console.log('hola, soy la seccion 5 de la funcion secciones')
+		project7.style.backgroundSize = '0% 100%';
+		project7.style.opacity = '0.4';
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
+		imagenDiv.innerHTML = "<img src='./img/yform1.png'>";
+		tituloProj.innerHTML = titulosh1[4];
+		subtitutloProj.innerHTML = subtitulosh3[2];
+		textoProj.innerHTML = textosp[0];
 		show = -1;		
 	}
 
 	else if (seccion === 6){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
+		project1.style.backgroundSize = '0% 100%';
+		project1.style.opacity = '0.4';
+		project2.style.backgroundSize = '0% 100%';
+		project2.style.opacity = '0.4';
+		project3.style.backgroundSize = '0% 100%';
+		project3.style.opacity = '0.4';
 		project4.style.backgroundSize = '0% 100%';
 		project4.style.opacity = '0.4';
 		project5.style.backgroundSize = '0% 100%';
@@ -398,14 +601,26 @@ else if (primer === false){
 		project6.style.transition = 'all 1s';
 		project7.style.backgroundSize = '0% 100%';
 		project7.style.opacity = '0.4';
-		imagenDiv.innerHTML = "<img src='./img/cyw_1.jpg'>";
-		console.log('hola, soy la seccion 6 de la funcion secciones')
+		project8.style.backgroundSize = '0% 100%';
+		project8.style.opacity = '0.4';
+		imagenDiv.innerHTML = "<img src='./img/works-06.png'>";
+		tituloProj.innerHTML = titulosh1[5];
+		subtitutloProj.innerHTML = subtitulosh3[3];
+		textoProj.innerHTML = textosp[0];
 		show = -1;
 	}
 
 	else if (seccion === 7){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
+		project1.style.backgroundSize = '0% 100%';
+		project1.style.opacity = '0.4';
+		project2.style.backgroundSize = '0% 100%';
+		project2.style.opacity = '0.4';
+		project3.style.backgroundSize = '0% 100%';
+		project3.style.opacity = '0.4';
+		project4.style.backgroundSize = '0% 100%';
+		project4.style.opacity = '0.4';
 		project5.style.backgroundSize = '0% 100%';
 		project5.style.opacity = '0.4';
 		project6.style.backgroundSize = '0% 100%';
@@ -416,14 +631,26 @@ else if (primer === false){
 		project7.style.transition = 'all 1s';
 		project8.style.backgroundSize = '0% 100%';
 		project8.style.opacity = '0.4';
-		imagenDiv.innerHTML = "<img src='./img/flyer1.jpg'>";
-		console.log('hola, soy la seccion 7 de la funcion secciones')
+		imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
+		tituloProj.innerHTML = titulosh1[6];
+		subtitutloProj.innerHTML = subtitulosh3[3];
+		textoProj.innerHTML = textosp[0];
 		show = -1;
 	}
 
 	else if (seccion === 8){
 		imagenDiv.style.opacity = '1';
 		imagenDiv.style.transition = '3s ease-out';
+		project1.style.backgroundSize = '0% 100%';
+		project1.style.opacity = '0.4';
+		project2.style.backgroundSize = '0% 100%';
+		project2.style.opacity = '0.4';
+		project3.style.backgroundSize = '0% 100%';
+		project3.style.opacity = '0.4';
+		project4.style.backgroundSize = '0% 100%';
+		project4.style.opacity = '0.4';
+		project5.style.backgroundSize = '0% 100%';
+		project5.style.opacity = '0.4';
 		project6.style.backgroundSize = '0% 100%';
 		project6.style.opacity = '0.4';
 		project7.style.backgroundSize = '0% 100%';
@@ -432,8 +659,10 @@ else if (primer === false){
 		project8.style.backgroundSize = '100% 100%';
 		project8.style.opacity = '1';
 		project8.style.transition = 'all 1s';
-		imagenDiv.innerHTML = "<img src='./img/inscripciones-05.jpg'>";
-		console.log('hola, soy la seccion 8 de la funcion secciones')
+		imagenDiv.innerHTML = "<img src='./img/works-08.png'>";
+		tituloProj.innerHTML = titulosh1[7];
+		subtitutloProj.innerHTML = subtitulosh3[4];
+		textoProj.innerHTML = textosp[0];
 		show = -1;		
 	}
 	}
@@ -576,6 +805,6 @@ function project8out(){
 }
 
 
-var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', ''];
-var subtitulosh3 = ['Editorial Design', 'Web Design & Visual Identity', 'UI/UX Design, Visual Identity', 'UI Design'];
+var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish'];
+var subtitulosh3 = ['Editorial Design', 'UI/UX Design | Visual Identity', 'UI Design', 'Print Design', 'Stationary'];
 var textosp = ['Reading Kingdom: a very interesting online program that teaches students to write and read in english language. I was asked to develop an editorial design which explains the benefits of using Reading Kingdom.'];
