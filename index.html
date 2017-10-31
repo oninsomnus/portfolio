@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 	<script src="./js/build/three.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
 	<div class="posicionDiv grid-container fluid">	
@@ -76,17 +77,48 @@
 				</div>
 			</div>
 		</div>
+		<div class="grid-x" id="divabout">
+			<div class="medium-12 cell about" id="txtabout">
+				<p><span><br>Hi, my name is Juan Diego Camacho.</br></span> I'm a graphic designer from Venezuela. My work ranges from Digital Design, UI/UX Design, Editorial Design, Video Edition and Photography.</p>
+				<p>My main interests are related with Visual Arts, Programming and UI/UX Design and Development.</p>
+				<p id='exp'>Experiences<p>
+				<p id='exp1'>HOZT Maracaibo | Digital Designer | SEP 2016 - MAY 2017</p>
+				<p id='exp2'>FIVERR | Freelancer | 2015 - 2017</p>
+			</div>
+		</div>
+		<div class="grid-x" id="divcontact">
+			<div class="medium-6 cell txtcontact">
+				<p>Interested in inquiring about developing some project with me? Or just want to say 'Hello'? Please use the contact form. I will be in contact with you as soon as possible.</p>
+			</div>
+			<div class="medium-6 cell formcontact">
+				<form method="POST">
+					<label for="name">Name</label>
+					<input id="name" type="text" placeholder="Here goes your name">
+					<label for="email">Email</label>
+					<input id="email" type="email" placeholder="example@example.com">
+					<label for="subject">Subject</label>
+					<input id="subject" type="text" placeholder="Here goes a subject for your message">
+					<label for="message">Message</label>
+					<textarea id="message" cols="1" rows="1" placeholder="Here goes anything you want to say"></textarea>
+					<input type="submit" id="forma" value="Send">
+				</form>
+			</div>
+		</div>
 	</div>
+
 	
 		<div class="P_preguntame">
 			<a href="#" class="indiceBtn">index</a>
 			<div class="rotate">
 				<ul id="subMenu">
 					<li>
-						<a href="#" class="rotate">about</a>
+						<a href="#" id='sideabout' class="rotate">about</a>
 					</li>
 					<li>
-						<a href="#" class="rotate">contact</a>
+						<a href="#" id='sidecontact' class="rotate">contact</a>
+					</li>
+					<li>
+						<a href="#" id='sideprojects' class="rotate">projects</a>
 					</li>
 				</ul>
 			</div>
@@ -136,7 +168,13 @@
 			</div>
 		</div>
 	<canvas id="myCanvas"></canvas>
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init("user_zpW6ZBbIgWbvofyXZlDJM");
+	   })();
+	</script>
 	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/forma.js"></script>
  	<script src="./js/back.js"></script>
 </body>
 </html>

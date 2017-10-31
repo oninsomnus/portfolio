@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	overflow: hidden;
 }
+
 canvas{
 	width: 100%;
 	height: 100%;
@@ -82,7 +83,7 @@ path.svg{
 }
 
 .author p {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-family: "Source Sans Pro", sans-serif;
 	margin-bottom: 0;
 	color: #8864DD;
@@ -113,6 +114,10 @@ path.svg{
     -webkit-animation:amarillo 4s infinite;
 }
 
+.botones a:visited{
+	color: white;
+}
+
 @-moz-keyframes amarillo{
 0%   {background:#FFD455; box-shadow: 3px 3px 6px rgba(136, 136, 136, 0.55)}
 50%  {background:#FFDA7A; box-shadow: -3px 3px 6px rgba(136, 136, 136, 0.55)}
@@ -132,7 +137,7 @@ path.svg{
 }
 
 #nombre{
-	line-height: 1rem;
+	line-height: 1.2rem;
 }
 
 .botones svg{
@@ -234,6 +239,10 @@ path.svg{
 .rotate:hover{
 	color: #FFD455;
 	transition: 2s;
+}
+
+.rotate:visited{
+	color: #7891D5;
 }
 
 .rotate ul{
@@ -431,4 +440,165 @@ path.svg{
 	.listaIndex h3{
 		width: 50%;
 	}
+}
+
+#txtabout{
+	display: none;
+	position: relative;
+	opacity: 0;
+}
+
+#txtabout > p{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 4vh;
+	padding: 0 11vh;
+	color: #6b4eb1;
+	letter-spacing: 0.6vh;
+	line-height: 8vh;
+	margin: 0;
+}
+
+#txtabout > p > span{
+	color: white;
+	background-color: #6b4eb1;
+	font-size: 3vh;
+	letter-spacing: 0.2vh;
+	line-height: 0vh;
+}
+
+#txtabout > #exp{
+	font-size: 2vh;
+	font-weight: 500;
+	letter-spacing: 0.4vh;
+	color: rgba(107, 78, 177, 0.72);
+}
+
+#txtabout > #exp1{
+	font-size: 3vh;
+	line-height: 0vh;
+	letter-spacing: 0.3vh;
+	font-weight: 500;
+	color: rgba(107, 78, 177, 0.72);
+}
+
+#txtabout > #exp2{
+	font-size: 3vh;
+	letter-spacing: 0.3vh;
+	font-weight: 500;
+	line-height: 9vh;
+	color: rgba(107, 78, 177, 0.72);
+}
+
+#divcontact{
+	display: none;
+	position: relative;
+	opacity: 0;
+	font-family: 'Work Sans', sans-serif;;
+	letter-spacing: 0.6vh;
+	font-weight: 500;
+}
+
+.txtcontact p{
+	padding: 5vh 0vh
+	2vh 5vh;
+	letter-spacing: 0.4vh;
+	line-height: 5vh;
+	color: rgb(107, 78, 177);
+}
+
+.txtcontact p:after{
+	content: '';
+	position: absolute;
+	bottom: 55%;
+	left: 3%;
+	right: 94%;
+	border-top: 1px solid rgb(107, 78, 177);
+}
+
+.formcontact{
+	padding: 2vh 5vh;
+	margin-top: 3vh;
+
+}
+
+.formcontact label{
+	color: rgb(107, 78, 177);
+}
+
+.formcontact input{
+	border: none;
+	border-bottom: 1px solid rgba(107, 78, 177, 0.72);
+	box-shadow: none;
+	background: none;
+}
+
+.formcontact input::placeholder{
+	font-size: 2vh;
+
+}
+
+.formcontact input:focus{
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #FFD455;
+	transition: 2s ease-out;
+}
+
+.formcontact [type=submit]{
+	color: white;
+	background: #FFD455;
+	padding: 0.5vh 2vh;
+	border: none;
+	box-shadow: 1px 1px 3px rgba(136, 136, 136, 0.55);
+	cursor: pointer;
+	font-size: 3vh;
+	transition: 2s ease-out;
+
+}
+
+.formcontact [type=submit]:hover{
+	color: white;
+	background: hsla(45, 100%, 53%, 1);;
+	transition: 2s ease-out;
+	box-shadow: -1px 1px 3px rgba(136, 136, 136, 0.55);
+
+}
+
+.formcontact [type=submit]:focus{
+	color: white;
+	background: #FFD455;
+	box-shadow: none;
+	border: none;
+}
+
+
+.formcontact textarea::placeholder{
+	font-size: 2vh;
+}
+
+.formcontact textarea{
+	border: none;
+	border-bottom: 1px solid rgba(107, 78, 177, 0.72);
+	box-shadow: none;
+	background: none;
+	resize: none;
+	font-family: 'Work Sans', sans-serif;
+	color: #7b7b7b;
+}
+
+.formcontact textarea:focus{
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #FFD455;
+	transition: 2s;
+}
+
+.formcontact input[type="text"]{
+	font-family: 'Work Sans', sans-serif;
+	color: #7b7b7b;
+}
+
+.formcontact input[type="email"]{
+	font-family: 'Work Sans', sans-serif;
+	color: #7b7b7b;
 }

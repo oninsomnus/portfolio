@@ -3,6 +3,7 @@ var pen = document.querySelector(".circle");
 var projects = document.querySelector("#projectsPlace");
 var subMenu = document.querySelector(".rotate ul");
 var about = document.querySelector("#about");
+var contact = document.querySelector('#contact');
 var btnAway = document.querySelector("#btnAway");
 var indiceBtn = document.querySelector(".indiceBtn");
 var circle = document.querySelector(".circle");
@@ -28,6 +29,12 @@ var tituloProj = document.querySelector('#tituloProj')
 var subtitutloProj = document.querySelector('#subtitutloProj')
 var textoProj = document.querySelector('#textoProj')
 var outPlace = document.querySelector('.posicionDiv')
+var sideabout = document.querySelector('#sideabout');
+var sidecontact = document.querySelector('#sidecontact');
+var sideprojects = document.querySelector('#sideprojects');
+var txtabout = document.querySelector('#txtabout');
+var losproyectos = document.querySelector('.losProyectos');
+var divcontact = document.querySelector('#divcontact');
 var primer = true;
 
 askMe.style.opacity="0";
@@ -35,14 +42,21 @@ askMe.style.transform="translateX(100%)";
 
 
 
+
 addEventListener('wheel', scroll);
 outPlace.addEventListener('click', cerrado);
 pen.addEventListener("mouseover", display, false);
 pen.addEventListener("mouseout", displayFalse);
+pen.addEventListener('click', clickContacto);
 projects.addEventListener('click', proyectos);
 flecha.addEventListener('click', imagenes);
 indiceBtn.addEventListener('click', listaTrabajos);
 cerrar.addEventListener('click', cerrado);
+about.addEventListener('click', clickAbout);
+contact.addEventListener('click', clickContacto);
+sideabout.addEventListener('click', clickAbout);
+sidecontact.addEventListener('click', clickContacto);
+sideprojects.addEventListener('click', proyectos);
 
 project1.addEventListener('mouseover', project1hover);
 project1.addEventListener('mouseout', project1out);
@@ -80,6 +94,7 @@ var id;
 var show = 0;
 var momento = 0;
 var seccion = 1;
+var cerrar = false;
 
 function display () {
 	askMe.style.transition="3s";
@@ -122,6 +137,7 @@ function displayFalse(){
 
 function proyectos (e){
 	e.preventDefault();
+	cerrar = true;
 	imagenDiv.style.opacity = '1';
 	imagenDiv.style.transition = '3s';
 	subMenu.style.transition= "3s";
@@ -131,7 +147,12 @@ function proyectos (e){
 	indiceBtn.style.transform = 'translateY(0%)';
 	myCanvas.style.opacity = '0.09';
 	myCanvas.style.transition = '2s';
-
+	sideprojects.style.display = 'none';
+	sideabout.style.display = 'inline-block';
+	sidecontact.style.display = 'inline-block';
+	losproyectos.style.display = 'inline-block';
+	txtabout.style.display = 'none';
+	divcontact.style.display = 'none';
 	let pos = 0;
 	let num = 0;
 	var id = setInterval(gridX, 30);
@@ -150,10 +171,85 @@ function proyectos (e){
 			projects.style.position = 'relative';
 			projects.style.opacity = num2-0.2;
 			projects.style.top = pos + 'rem';
-
 		}
 	}
 	secciones();
+}
+
+function clickAbout(e){
+	e.preventDefault();
+	subMenu.style.transition= "3s";
+	subMenu.style.transform= "rotate(-90deg) translate(25%)";
+	sideabout.style.display = 'none';
+	sideprojects.style.display = 'inline-block';
+	sidecontact.style.display = 'inline-block';
+	txtabout.style.display = 'inline-block';
+	divMenu.style.display = 'none';
+	losproyectos.style.display = 'none';
+	myCanvas.style.opacity = '0.09';
+	myCanvas.style.transition = '2s';
+	divcontact.style.display = 'none';
+	indiceBtn.style.transform = 'translateY(200%)'
+	let pos = 0;
+	let num = 0;
+	var id = setInterval(gridX, 30);
+	function gridX(){
+		if (pos == 30){
+			clearInterval(id);
+			btnAway.style.display = 'none';
+			txtabout.style.opacity = '1';
+			txtabout.style.transition = '2s';
+		}
+		else {
+			num += 0.05;
+			num2 = 1-num;
+			pos++;
+			btnAway.style.position = 'relative';
+			btnAway.style.bottom = pos + 'rem';
+			btnAway.style.opacity = num2;
+			projects.style.position = 'relative';
+			projects.style.opacity = num2-0.2;
+			projects.style.top = pos + 'rem';
+		}
+	}
+}
+
+function clickContacto(e){
+	e.preventDefault();
+	subMenu.style.transition= "3s";
+	subMenu.style.transform= "rotate(-90deg) translate(25%)";
+	sidecontact.style.display = 'none';
+	sideprojects.style.display = 'inline-block';
+	sideabout.style.display = 'inline-block';
+	divcontact.style.display = 'flex';
+	divMenu.style.display = 'none';
+	losproyectos.style.display = 'none';
+	myCanvas.style.opacity = '0.09';
+	myCanvas.style.transition = '2s';
+	txtabout.style.display = 'none';
+	indiceBtn.style.transform = 'translateY(200%)'
+	let pos = 0;
+	let num = 0;
+	var id = setInterval(gridX, 30);
+	function gridX(){
+		if (pos == 30){
+			clearInterval(id);
+			btnAway.style.display = 'none';
+			divcontact.style.opacity = '1';
+			divcontact.style.transition = '2s';
+		}
+		else {
+			num += 0.05;
+			num2 = 1-num;
+			pos++;
+			btnAway.style.position = 'relative';
+			btnAway.style.bottom = pos + 'rem';
+			btnAway.style.opacity = num2;
+			projects.style.position = 'relative';
+			projects.style.opacity = num2-0.2;
+			projects.style.top = pos + 'rem';
+		}
+	}
 }
 
 function imagenes(){
@@ -333,11 +429,13 @@ function listaTrabajos(){
 }
 
 function cerrado(){
-	lsIndice.style.transform = 'translateY(146%)';
-	lsIndice.style.transition = '2s ease-out';
-	indiceBtn.style.opacity = '1';
-	indiceBtn.style.transition = '4s';
-	indiceBtn.style.transform = 'translateY(0%)';
+	if (cerrar == true){
+		lsIndice.style.transform = 'translateY(146%)';
+		lsIndice.style.transition = '2s ease-out';
+		indiceBtn.style.opacity = '1';
+		indiceBtn.style.transition = '4s';
+		indiceBtn.style.transform = 'translateY(0%)';
+	}
 }
 
 
@@ -393,7 +491,6 @@ function scroll(e){
 			setTimeout(function(){
 				seccion++;
 				secciones();
-				console.log('seccion :'+seccion);
 				momento = 0;
 			}, 300);
 			if (seccion >= 8){
@@ -412,7 +509,6 @@ function scroll(e){
 				
 				seccion--;
 				secciones();
-				console.log('seccion :'+seccion);
 				momento = 0;
 			}, 300);
 		}
@@ -423,7 +519,6 @@ function scroll(e){
 }
 
 function secciones(){
-	console.log(primer)
 	if (primer === true){
 
 	primer = false;
@@ -807,4 +902,4 @@ function project8out(){
 
 var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish'];
 var subtitulosh3 = ['Editorial Design', 'UI/UX Design | Visual Identity', 'UI Design', 'Print Design', 'Stationary'];
-var textosp = ['Reading Kingdom: a very interesting online program that teaches students to write and read in english language. I was asked to develop an editorial design which explains the benefits of using Reading Kingdom.'];
+var textosp = ['Reading Kingdom: is a very educative and unique online program that teach students to write and read in English. I was asked to develop an editorial design which explains the benefits of using Reading Kingdom.'];
