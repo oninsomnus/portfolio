@@ -189,7 +189,7 @@ function clickAbout(e){
 	myCanvas.style.opacity = '0.09';
 	myCanvas.style.transition = '2s';
 	divcontact.style.display = 'none';
-	indiceBtn.style.transform = 'translateY(200%)'
+	indiceBtn.style.transform = 'translateY(200%)';
 	let pos = 0;
 	let num = 0;
 	var id = setInterval(gridX, 30);
@@ -199,6 +199,8 @@ function clickAbout(e){
 			btnAway.style.display = 'none';
 			txtabout.style.opacity = '1';
 			txtabout.style.transition = '2s';
+			txtabout.style.overflow = 'scroll';
+    		txtabout.style.height = '450px';
 		}
 		else {
 			num += 0.05;
@@ -382,39 +384,61 @@ function imagenes(){
 	if (seccion === 7){
 		if (show === 1){
 			imagenDiv.innerHTML = "<img src='./img/works-05.png'>";
+			tituloProj.innerHTML = titulosh1[8];
+			textoProj.innerHTML = textosp[7];
 			show = -1;
 		}
 		else if (show === 0){
 			imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
+			tituloProj.innerHTML = titulosh1[6];
+			textoProj.innerHTML = textosp[6];
 		}
 	}
 
 	if (seccion === 8){
 		if (show === 1){
 			imagenDiv.innerHTML = "<img src='./img/works-09.png'>";
+			tituloProj.innerHTML = titulosh1[7];
+			subtitutloProj.innerHTML = subtitulosh3[4];
+			textoProj.innerHTML = textosp[8];
 			show = +1;
 		}
 		else if (show === 0){
 			imagenDiv.innerHTML = "<img src='./img/works-08.png'>";
+			tituloProj.innerHTML = titulosh1[7];
+			subtitutloProj.innerHTML = subtitulosh3[4];
+			textoProj.innerHTML = textosp[8];
 		}
 
 		else if (show === 2){
 			imagenDiv.innerHTML = "<img src='./img/works-04.png'>";
+			tituloProj.innerHTML = titulosh1[9];
+			subtitutloProj.innerHTML = subtitulosh3[5];
+			textoProj.innerHTML = textosp[9];
 			show+1;
 		}
 
 		else if (show === 3){
 			imagenDiv.innerHTML = "<img src='./img/works-07.png'>";
+			tituloProj.innerHTML = titulosh1[9];
+			subtitutloProj.innerHTML = subtitulosh3[5];
+			textoProj.innerHTML = textosp[9];
 			show+1;
 		}
 
 		else if (show === 4){
 			imagenDiv.innerHTML = "<img src='./img/works-15.png'>";
+			tituloProj.innerHTML = titulosh1[10];
+			subtitutloProj.innerHTML = subtitulosh3[4];
+			textoProj.innerHTML = textosp[10];
 			show+1;
 		}
 
 		else if (show === 5){
 			imagenDiv.innerHTML = "<img src='./img/works-16.png'>";
+			tituloProj.innerHTML = titulosh1[10];
+			subtitutloProj.innerHTML = subtitulosh3[4];
+			textoProj.innerHTML = textosp[10];
 			show = -1;
 		}
 	}
@@ -591,7 +615,7 @@ else if (primer === false){
 		project8.style.opacity = '0.4';
 		tituloProj.innerHTML = titulosh1[1];
 		subtitutloProj.innerHTML = subtitulosh3[0];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[1];
 		show = -1;
 	}
 
@@ -618,7 +642,7 @@ else if (primer === false){
 		project8.style.opacity = '0.4';
 		tituloProj.innerHTML = titulosh1[2];
 		subtitutloProj.innerHTML = subtitulosh3[2];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[2];
 		show = -1;
 	}
 
@@ -646,7 +670,7 @@ else if (primer === false){
 		project8.style.opacity = '0.4';
 		tituloProj.innerHTML = titulosh1[3];
 		subtitutloProj.innerHTML = subtitulosh3[2];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[3];
 		show = -1;
 	}
 
@@ -673,7 +697,7 @@ else if (primer === false){
 		imagenDiv.innerHTML = "<img src='./img/yform1.png'>";
 		tituloProj.innerHTML = titulosh1[4];
 		subtitutloProj.innerHTML = subtitulosh3[2];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[4];
 		show = -1;		
 	}
 
@@ -701,7 +725,7 @@ else if (primer === false){
 		imagenDiv.innerHTML = "<img src='./img/works-06.png'>";
 		tituloProj.innerHTML = titulosh1[5];
 		subtitutloProj.innerHTML = subtitulosh3[3];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[5];
 		show = -1;
 	}
 
@@ -729,7 +753,7 @@ else if (primer === false){
 		imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
 		tituloProj.innerHTML = titulosh1[6];
 		subtitutloProj.innerHTML = subtitulosh3[3];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[6];
 		show = -1;
 	}
 
@@ -757,7 +781,7 @@ else if (primer === false){
 		imagenDiv.innerHTML = "<img src='./img/works-08.png'>";
 		tituloProj.innerHTML = titulosh1[7];
 		subtitutloProj.innerHTML = subtitulosh3[4];
-		textoProj.innerHTML = textosp[0];
+		textoProj.innerHTML = textosp[8];
 		show = -1;		
 	}
 	}
@@ -900,6 +924,17 @@ function project8out(){
 }
 
 
-var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish'];
-var subtitulosh3 = ['Editorial Design', 'UI/UX Design | Visual Identity', 'UI Design', 'Print Design', 'Stationary'];
-var textosp = ['Reading Kingdom: is a very educative and unique online program that teach students to write and read in English. I was asked to develop an editorial design which explains the benefits of using Reading Kingdom.'];
+var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish', 'Green Zone', 'Introspección', 'Infinity Trader'];
+var subtitulosh3 = ['Editorial Design', 'UI/UX Design | Visual Identity', 'UI Design', 'Print Design', 'Stationary', 'Digital Design'];
+var textosp = [
+'AGT: Acción, Gestión y Transformación, is a Venezuela based company that makes management for residential properties. Their services includes accounting, administration, gardening, cleaning. For this project I designed their visual identity and website, focusing in the enviroment that surrounds the company, which was an important detail to develop in the color palette, since is located in a island in the caribbean sea.',
+'Reading Kingdom: is a very educative and unique online program that teach students to write and read in English. I was asked to develop an editorial design which explains the benefits of using Reading Kingdom.',
+'Tropicolab is a blog from an Venezuelan architect. Her project was to create a space where people could publish essays about contemporary art and architecture. This was a collaborative project with the HOZT crew where I got the chance to design some pages of the website, such as: article page, archive page, contact page and all of the responsives sizes.',
+'Xerode is a computer software that converts the formats of different media files, such as videos and audios. I was asked to make a more attractive user interface design and to improve the user experience design. I designed two different color options for the client.',
+'Yummy Club is a web and phone application that joins together every restaurant from the city in one single place. When I were part of this crew, I designed a form that allows users to add into the app their favorites restaurants, letting them select the food speciality, the restaurant enviroment, the address, social media and photos.',
+"Chelsea Young Writers Club is London based institute that stimulates creative thinking and writing skills in kids through many after-school workshops. We've worked together in several projects, many of them have been printing and digital pieces to advertise their workshops, all of them with different topics and approachs.",
+'This flyer was a branding collateral to advertise the services offered by Citas Medicas, which is a website with a medical directory, where users can find easier medical services.',
+'Green Zone is a phone app that help the users to improve their exercises rutine, by having a online personal trainer through the app. I was asked to make this branding collateral, with pictures that could engage with the brand and keeping the same branding color scheme.',
+'Business card design for a spanish teacher and public speaker. For this proposal I wanted to reflex, very slightly, the characteristics of the services my client was offering, but also adding some elements that could bring up attention, such as the graphic elements and the contrasts in the color scheme.',
+'These designs were made as an invitation to two different exhibitions in the art faculty from my city, where the fine arts students showed their artworks. Both designs were published in social medias.',
+'Branding collaterals for Infinity Trader, Costa Rica based company. I developed different kind of designs, such as stationary design of legal documents and identity pieces, and also some digital design, like a pitch presentation. All of the pieces were based in the palette color that was already defined in their logo.'];
