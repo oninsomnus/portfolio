@@ -612,13 +612,13 @@ path.svg{
 }
 
 
-@media only screen and (min-width: 1100px) and (max-width: 1348px){
+@media only screen and (min-width: 1190px) and (max-width: 1348px){
 	.listaIndex h3{
-		width: 38%;
+		width: 45%;
 	}
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1100px){
+@media only screen and (min-width: 800px) and (max-width: 1190px){
 	.listaIndex h3{
 		width: 60%;
 	}
@@ -630,7 +630,7 @@ path.svg{
 	}
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px){
+@media only screen and (min-width: 300px) and (max-width: 637px){
 	.listaIndex h3{
 		width: 100%;
 		text-align: center;
@@ -638,4 +638,8 @@ path.svg{
 
 	.indexLista{
 		padding: 0;
+	}
+	
+	.cerrar{
+		display: none;
 	}
