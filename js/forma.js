@@ -23,7 +23,7 @@ function enviarMensaje(e){
 		alert('Message received');
 		emailjs.send("gmail","hola3",{
 			from_name: name.value, 
-			message_html: email.value,
+			message_html: message.value,
 			to_email: email.value,
 			to_subject: subject.value
 		});
