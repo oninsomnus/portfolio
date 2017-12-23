@@ -199,7 +199,7 @@ function clickAbout(e){
 			btnAway.style.display = 'none';
 			txtabout.style.opacity = '1';
 			txtabout.style.transition = '2s';
-			txtabout.style.overflow-y = 'scroll';
+			txtabout.style.overflowY = 'scroll';
     			txtabout.style.height = '450px';
 		}
 		else {
