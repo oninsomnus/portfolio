@@ -199,8 +199,8 @@ function clickAbout(e){
 			btnAway.style.display = 'none';
 			txtabout.style.opacity = '1';
 			txtabout.style.transition = '2s';
-			txtabout.style.overflow = 'scroll';
-    		txtabout.style.height = '450px';
+			txtabout.style.overflow-y = 'scroll';
+    			txtabout.style.height = '450px';
 		}
 		else {
 			num += 0.05;
