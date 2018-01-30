@@ -382,28 +382,33 @@ function imagenes(){
 	}
 
 	if (seccion === 7){
+		console.log(show);
 		if (show === 1){
 			imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
 			tituloProj.innerHTML = titulosh1[8];
 			textoProj.innerHTML = textosp[7];
-			show = +1;
+			show+1;
+			console.log(show);
 		}
 		else if (show === 0){
 			imagenDiv.innerHTML = "<img src='./img/fly-15.png'>";
-			tituloProj.innerHTML = titulosh1[6];
-			textoProj.innerHTML = textosp[6];
+			tituloProj.innerHTML = titulosh1[11];
+			textoProj.innerHTML = textosp[11];
+			console.log(show);
 		}
 		else if (show === 2){
 			imagenDiv.innerHTML = "<img src='./img/works-05.png'>";
 			tituloProj.innerHTML = titulosh1[6];
 			textoProj.innerHTML = textosp[6];
-			show = +1;
+			show+1;
+			console.log(show);
 		}
 		else if (show === 3){
 			imagenDiv.innerHTML = "<img src='./img/fly-14.png'>";
-			tituloProj.innerHTML = titulosh1[6];
-			textoProj.innerHTML = textosp[6];
+			tituloProj.innerHTML = titulosh1[12];
+			textoProj.innerHTML = textosp[12];
 			show = -1;
+			console.log(show);
 		}
 	}
 
@@ -762,10 +767,10 @@ else if (primer === false){
 		project7.style.transition = 'all 1s';
 		project8.style.backgroundSize = '0% 100%';
 		project8.style.opacity = '0.4';
-		imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
-		tituloProj.innerHTML = titulosh1[6];
+		imagenDiv.innerHTML = "<img src='./img/fly-15.png'>";
+		tituloProj.innerHTML = titulosh1[11];
 		subtitutloProj.innerHTML = subtitulosh3[3];
-		textoProj.innerHTML = textosp[6];
+		textoProj.innerHTML = textosp[11];
 		show = -1;
 	}
 
@@ -936,7 +941,7 @@ function project8out(){
 }
 
 
-var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish', 'Green Zone', 'Introspección', 'Infinity Trader'];
+var titulosh1 = ['AGT', 'Reading Kingdom', 'TropicoLab', 'Xerode Video Converter', 'Yummy Club Form', 'Chelsea Young Writers', 'Citas Médicas', 'Teaching Spanish', 'Green Zone', 'Introspección', 'Infinity Trader', 'SeedTrust', 'Gym Rox Fitness'];
 var subtitulosh3 = ['Editorial Design', 'UI/UX Design | Visual Identity', 'UI Design', 'Print Design', 'Stationary', 'Digital Design'];
 var textosp = [
 'AGT: Acción, Gestión y Transformación, is a Venezuelan based company that makes management for residential properties. Their services include accounting, administration, gardening, cleaning. For this project I designed their visual identity and website, focusing in the enviroment that surrounds the company, which was an important detail to develop in the color palette, since is located in a island in the caribbean sea.',
@@ -949,4 +954,6 @@ var textosp = [
 'Green Zone is a phone app that helps users to improve their exercises rutine, by having an online personal trainer through the app. I was asked to make this branding collateral with pictures that could engage with the brand and keeping the same branding color scheme.',
 'Business card design for a spanish teacher and public speaker. For this proposal I wanted to reflect, very slightly, the characteristics of the services my client was offering, but also adding some elements that could bring up attention, such as the graphic elements and the contrasts in the color scheme.',
 'These designs were made as an invitation to two different exhibitions in the art faculty from my city, where the fine arts students showed their artworks. Both designs were published in social media.',
-'Branding collaterals for Infinity Trader, a Costa Rica based company. I developed different kinds of designs, such as stationary design of legal documents and identity pieces, and also some digital design, like a pitch presentation. All of the pieces were based in the palette color that was already defined in their logo.'];
+'Branding collaterals for Infinity Trader, a Costa Rica based company. I developed different kinds of designs, such as stationary design of legal documents and identity pieces, and also some digital design, like a pitch presentation. All of the pieces were based in the palette color that was already defined in their logo.',
+'SeedTrust is a company that provides dependable escrow services to intended parents, surrogates, and egg donors during collaborative reproductive arrangements. This marketing collateral intended advertise some of their benefits and services, and also showing some of their partners crew.',
+'This flyer was a intended to advertise the grand opening of Gym Rox Fitness, a gym located in Jamaica, which was advertising a new sale promotion because of the opening. I was asked to design this flyer with images that could engage with their target and the services they offer.'];
