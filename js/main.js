@@ -383,15 +383,27 @@ function imagenes(){
 
 	if (seccion === 7){
 		if (show === 1){
-			imagenDiv.innerHTML = "<img src='./img/works-05.png'>";
+			imagenDiv.innerHTML = "<img src='./img/fly-15.png'>";
 			tituloProj.innerHTML = titulosh1[8];
 			textoProj.innerHTML = textosp[7];
-			show = -1;
+			show = +1;
 		}
 		else if (show === 0){
 			imagenDiv.innerHTML = "<img src='./img/works-01.png'>";
 			tituloProj.innerHTML = titulosh1[6];
 			textoProj.innerHTML = textosp[6];
+		}
+		else if (show === 2){
+			imagenDiv.innerHTML = "<img src='./img/works-05.png'>";
+			tituloProj.innerHTML = titulosh1[6];
+			textoProj.innerHTML = textosp[6];
+			show = +1;
+		}
+		else if (show === 3){
+			imagenDiv.innerHTML = "<img src='./img/fly-14.png'>";
+			tituloProj.innerHTML = titulosh1[6];
+			textoProj.innerHTML = textosp[6];
+			show = -1;
 		}
 	}
 
