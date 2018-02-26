@@ -61,23 +61,25 @@ scene.fog = new THREE.Fog( 0x7891D5 , 0, 1000 );
 function addCubes() {
 	var xDistance = 20;
     var zDistance = 20;
-		var geometry = new THREE.TorusGeometry( 10, 7.9, 23, 100 );
+	var geometry = new THREE.TorusGeometry( 10, 7.9, 23, 100 );
 
 
-		var material = new THREE.MeshPhongMaterial({color: 0x8864DD, transparent: true, opacity: 1});
+	var material = new THREE.MeshPhongMaterial({color: 0x8864DD, transparent: true, opacity: 1});
 
     //initial offset so does not start in middle.
     var xOffset = -80;
 
+    var figurasFondo = [];
+
     for(var i = 0; i < 40; i++){
         for(var j = 0; j < 40; j++){
-        		var mesh  = new THREE.Mesh(geometry, material);
-        		mesh.position.x = (xDistance * i / Math.random(2)) + xOffset;
-            mesh.position.z = (zDistance * j / Math.random(2));
-            mesh.rotation.x = 300;
-            mesh.castShadow = true;
-            mesh.receiveShadow = true;
-        		scene.add(mesh);
+        	figurasFondo[j] = new THREE.Mesh(geometry, material);
+        	figurasFondo[j].position.x = (xDistance * i / Math.random(2)) + xOffset;
+            figurasFondo[j].position.z = (zDistance * j / Math.random(2));
+            figurasFondo[j].rotation.x = 300;
+            figurasFondo[j].castShadow = true;
+            figurasFondo[j].receiveShadow = true;
+        		scene.add(figurasFondo[j]);
         }
     };
 }
