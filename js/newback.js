@@ -1,6 +1,6 @@
-new Vivus('backid', {
-  file: './img/newback.svg', 
+new Vivus('backid', { 
   duration: 100,
+  file: './img/newback.svg',
   start: 'autostart', 
   animTimingFunction: Vivus.EASE
 });
