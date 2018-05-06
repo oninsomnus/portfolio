@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'sphere_sansregular';
+    src: url('spheresans-webfont.woff2') format('woff2'),
+         url('spheresans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -148,7 +156,7 @@ path.svg{
 	transform: translate(-10.4rem, 25px);
 }
 
-#projectsPlace{
+/*#projectsPlace{
 	margin-top:2em;
 }
 
@@ -226,7 +234,7 @@ path.svg{
 0%   {transform: translateY(-5px)}
 50%  {transform: translateY(5px)}
 100%   {transform: translateY(-5px)}
-}
+}*/
 
 .rotate{
 	color: #7891D5;
@@ -630,8 +638,8 @@ path.svg{
 
 .botonenuevos{
 	display: inline-block;
-	width: 33vw;
-	height: 33px;
+	width: 33.14vw;
+	height: 45px;
 	text-align: center;
 	vertical-align: middle;
     cursor: pointer;
@@ -642,7 +650,44 @@ path.svg{
     position: relative;
     color: white;
     padding-top: 2px;
-    top: 13%;
+    top: 22%;
+}
+
+.botonenuevos > a:hover{
+    color: white;
+}
+
+#about{
+	background-color: #8864DD;
+	transition: background-color 1s ease-out;
+	font-family: 'sphere_sansregular', sans-serif;
+    font-size: 1.3vw;
+}
+
+#about:hover{
+	background-color: #6232d2;
+}
+
+#projects{
+	background-color: #FFD455;
+	transition: background-color 1s ease-out;
+	font-family: 'sphere_sansregular', sans-serif;
+    font-size: 1.3vw;
+}
+
+#projects:hover{
+	background-color: #f5b800;
+}
+
+#contact{
+	background-color: #FF495F;
+	transition: background-color 1s ease-out;
+	font-family: 'sphere_sansregular', sans-serif;
+    font-size: 1.3vw;
+}
+
+#contact:hover{
+	background-color: #eb001b;
 }
 
 @media only screen and (min-width: 1190px) and (max-width: 1348px){
