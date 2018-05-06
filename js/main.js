@@ -1,6 +1,6 @@
 var askMe = document.querySelector("#txtPregunta");
 var pen = document.querySelector(".circle");
-var projects = document.querySelector("#projectsPlace");
+var projects = document.querySelector("#projects");
 var subMenu = document.querySelector(".rotate ul");
 var about = document.querySelector("#about");
 var contact = document.querySelector('#contact');

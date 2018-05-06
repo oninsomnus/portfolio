@@ -15,7 +15,9 @@ canvas{
 	position: absolute;
 	z-index: 1;
 	width: 100%;
-	margin-top: 1rem !important;
+	min-height: 100vh;
+    padding: 0 !important;
+    margin: 0;
 }
 
 .celdas {
@@ -95,7 +97,7 @@ path.svg{
 
 .botones {
 	padding-top: 9rem;
-	height: 60vh;
+	height: 100vh;
 }
 
 .botones a{
@@ -611,6 +613,37 @@ path.svg{
 	fill: #8d76c3;
 }
 
+#backid{
+	position: absolute;
+	top: 0;
+	z-index: -100;
+	width: 100%;
+	height: auto;
+}
+
+.misBotons{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.botonenuevos{
+	display: inline-block;
+	width: 33vw;
+	height: 33px;
+	text-align: center;
+	vertical-align: middle;
+    cursor: pointer;
+
+}
+
+.botonenuevos > a{
+    position: relative;
+    color: white;
+    padding-top: 2px;
+    top: 13%;
+}
 
 @media only screen and (min-width: 1190px) and (max-width: 1348px){
 	.listaIndex h3{

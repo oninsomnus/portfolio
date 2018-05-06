@@ -12,11 +12,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
-	<script src="./js/build/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.js"></script>
+	<!-- <script src="./js/build/three.js"></script> -->
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
-	<div class="posicionDiv grid-container fluid">	
+	<div id="backid"></div>
+<!-- 	<div style="position: relative; min-height: 100vh; min-width: 100vw">
+
+	</div> -->
+	<div class="posicionDiv grid-container fluid">
+		<div class="misBotons">
+			<div class="botonenuevos" style="background-color: #8864DD"><a href="">About</a></div>
+			<div class="botonenuevos" style="background-color: #FFD455"><a href="">Projects</a></div>
+			<div class="botonenuevos" style="background-color: #FF495F"><a href="">Contact</a></div>
+		</div>	
 	<div class="grid-x">
 		<div class="large-6 small-6 cell">
 			<a href="index.html">
@@ -28,12 +38,18 @@
 			<p><span> Graphic Designer </span> </p>
 		</div>
 	</div>
-	<div class="botones" id="divMenu">
+
+	<!-- <div class="botones" id="divMenu">
 		<div class="grid-x" id="btnAway">
-			<div class="medium-6 cell text-center" id="about">
+			<div class="medium-4 cell text-center" id="about">
 				<a href="">about</a>
 			</div>
-			<div class="medium-6 cell text-center" id="contact">
+			<div class="medium-4 cell text-center" id="projects">
+				<a href="" id="projectBox">
+					view projects
+				</a>
+			</div>
+			<div class="medium-4 cell text-center" id="contact">
 				<a href="">contact</a>
 			</div>
 		</div>
@@ -54,7 +70,7 @@
 				</g>
 				</svg>
 			</div>
-		</div>
+		</div> -->
 	</div>
 		<div class="losProyectos">
 			<div class="grid-x" id="trabajos">
@@ -268,7 +284,6 @@
 				</div>
 			</div>
 		</div>
-	<canvas id="myCanvas"></canvas>
 	<script type="text/javascript">
 	   (function(){
 	      emailjs.init("user_zpW6ZBbIgWbvofyXZlDJM");
@@ -276,6 +291,7 @@
 	</script>
 	<script type="text/javascript" src="./js/main.js"></script>
 	<script type="text/javascript" src="./js/forma.js"></script>
- 	<script src="./js/back.js"></script>
+	<script src="./js/newback.js"></script>
+ 	<!-- <script src="./js/back.js"></script> -->
 </body>
 </html>
