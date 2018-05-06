@@ -638,11 +638,12 @@ path.svg{
 
 .botonenuevos{
 	display: inline-block;
-	width: 33.14vw;
+	width: 33.35vw;
 	height: 45px;
 	text-align: center;
 	vertical-align: middle;
     cursor: pointer;
+    margin-right: -5px;
 
 }
 
@@ -661,7 +662,7 @@ path.svg{
 	background-color: #8864DD;
 	transition: background-color 1s ease-out;
 	font-family: 'sphere_sansregular', sans-serif;
-    font-size: 1.3vw;
+    font-size: 126%;;
 }
 
 #about:hover{
@@ -672,7 +673,7 @@ path.svg{
 	background-color: #FFD455;
 	transition: background-color 1s ease-out;
 	font-family: 'sphere_sansregular', sans-serif;
-    font-size: 1.3vw;
+    font-size: 126%;;
 }
 
 #projects:hover{
@@ -683,7 +684,7 @@ path.svg{
 	background-color: #FF495F;
 	transition: background-color 1s ease-out;
 	font-family: 'sphere_sansregular', sans-serif;
-    font-size: 1.3vw;
+    font-size: 126%;;
 }
 
 #contact:hover{
