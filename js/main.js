@@ -953,3 +953,4 @@ var textosp = [
 'Branding collaterals for Infinity Trader, a Costa Rica based company. I developed different kinds of designs, such as stationary design of legal documents and identity pieces, and also some digital design, like a pitch presentation. All of the pieces were based in the palette color that was already defined in their logo.',
 'SeedTrust is a company that provides dependable escrow services to intended parents, surrogates, and egg donors during collaborative reproductive arrangements. This marketing collateral intended advertise some of their benefits and services, and also showing some of their partners crew.',
 'This flyer was a intended to advertise the grand opening of Gym Rox Fitness, a gym located in Jamaica, which was advertising a new sale promotion because of the opening. I was asked to design this flyer with images that could engage with their target and the services they offer.'];
+
