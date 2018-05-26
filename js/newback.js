@@ -22,8 +22,6 @@ new Vivus('backid', {
 
 }
 
-console.log(wwid)
-
 if(wwid >= 300 && wwid <= 677){
 
 	new Vivus('backid', { 

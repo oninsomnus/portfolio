@@ -1,0 +1,111 @@
+@import "compass/css3"
+@include font-face("Sphere", url('spheresans-webfont.woff'))
+
+//////////////////////////VARIABLES
+$violeta: #8864DD
+$amarillo: #FFD455
+$rojo: #FF495F
+
+#backid
+	position: absolute
+	top: 0
+	z-index: -100
+	width: 100%
+	height: auto
+
+
+.misBotons
+	position: fixed
+	bottom: 0
+	width: 100%
+	z-index: 2000
+
+
+
+.botonenuevos
+	display: inline-block
+	width: 33vw
+	height: 45px
+	text-align: center
+	vertical-align: middle
+	cursor: pointer
+	margin-right: -5px
+
+
+
+.botonenuevos
+	a
+		position: relative
+		color: white
+		padding-top: 2px
+		top: 22%
+
+		&:hover, &:focus
+			color: white
+			text-decoration: none
+
+
+#about
+	background-color: $violeta
+	transition: background-color 1s ease-out
+	font-family: 'Sphere', sans-serif
+	font-size: 126%
+
+
+#about:hover
+	background-color: #6232d2
+
+
+#projects
+	background-color: $amarillo
+	transition: background-color 1s ease-out
+	font-family: 'Sphere', sans-serif
+	font-size: 126%
+
+
+#projects:hover
+	background-color: #f5b800
+
+
+#contact
+	background-color: $rojo
+	transition: background-color 1s ease-out
+	font-family: 'Sphere', sans-serif
+	font-size: 126%
+
+
+#contact:hover
+	background-color: #eb001b
+
+
+@media only screen and (min-width: 1190px) and (max-width: 1348px)
+	.listaIndex h3
+		width: 45%
+	
+
+
+@media only screen and (min-width: 800px) and (max-width: 1190px)
+	.listaIndex h3
+		width: 60%
+	
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px)
+	.listaIndex h3
+		width: 80%
+	
+
+
+@media only screen and (min-width: 300px) and (max-width: 637px)
+	.listaIndex h3
+		width: 100%
+		text-align: center
+	
+
+	.indexLista
+		padding: 0
+	
+	
+	.cerrar
+		display: none
+	

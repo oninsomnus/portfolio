@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Sphere';
+    src: url('spheresans-webfont.woff2') format('woff2'),
+         url('spheresans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -613,4 +621,105 @@ path.svg{
 	fill: #8d76c3;
 }
 
+#backid{
+	position: absolute;
+	top: 0;
+	z-index: -100;
+	width: 100%;
+	height: auto;
+}
 
+.misBotons{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 2000;
+
+}
+
+.botonenuevos{
+	display: inline-block;
+	width: 33.35vw;
+	height: 45px;
+	text-align: center;
+	vertical-align: middle;
+    cursor: pointer;
+    margin-right: -5px;
+
+}
+
+.botonenuevos > a{
+    position: relative;
+    color: white;
+    padding-top: 2px;
+    top: 22%;
+}
+
+.botonenuevos > a:hover{
+    color: white;
+}
+
+#about{
+	background-color: #8864DD;
+	transition: background-color 1s ease-out;
+	font-family: 'Sphere', sans-serif;
+    font-size: 126%;;
+}
+
+#about:hover{
+	background-color: #6232d2;
+}
+
+#projects{
+	background-color: #FFD455;
+	transition: background-color 1s ease-out;
+	font-family: 'Sphere', sans-serif;
+    font-size: 126%;;
+}
+
+#projects:hover{
+	background-color: #f5b800;
+}
+
+#contact{
+	background-color: #FF495F;
+	transition: background-color 1s ease-out;
+	font-family: 'Sphere', sans-serif;
+    font-size: 126%;;
+}
+
+#contact:hover{
+	background-color: #eb001b;
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1348px){
+	.listaIndex h3{
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1190px){
+	.listaIndex h3{
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+	.listaIndex h3{
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 637px){
+	.listaIndex h3{
+		width: 100%;
+		text-align: center;
+	}
+
+	.indexLista{
+		padding: 0;
+	}
+	
+	.cerrar{
+		display: none;
+	}

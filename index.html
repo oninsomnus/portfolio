@@ -6,27 +6,33 @@
 	<meta name="description" content="Juan Diego Camacho is a designer whose works ranges differents fields: Digital Design, UI/UX Design, Editorial Design, Video Edition and Photography.">
 	<meta name="keywords" content="juan diego camacho, juan camacho, design, art, designer, graphic design, ui design, ux design, identity, logo, editorial, visual art, venezuela">
 	<title>Graphic Design | Juan Diego Camacho</title>
-	<link rel="stylesheet" type="text/css" href="./css/css.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
 	<link rel="icon" type="image/png" href="./img/icon.png" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"/>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.js"></script>
-	<!-- <script src="./js/build/three.js"></script> -->
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
 </head>
 <body>
-	<div id="backid"></div>
-<!-- 	<div style="position: relative; min-height: 100vh; min-width: 100vw">
+	<main id="barba-wrapper">
+		<div class="barba-container">
+			<div id="backid"></div>
+			<div class="misBotons">
+				<div class="botonenuevos" id="about">
+					<a href="aboutme.html">about</a>
+				</div>
+				<div class="botonenuevos" id="projects"><a href="myprojects.html">projects</a></div>
+				<div class="botonenuevos" id="contact"><a href="contactme.html">contact</a></div>
+			</div>
+		</div>
+	</main>
 
-	</div> -->
 	<div class="posicionDiv grid-container fluid">
-		<div class="misBotons">
-			<div class="botonenuevos" id="about"><a href="">about</a></div>
-			<div class="botonenuevos" id="projects"><a href="">projects</a></div>
-			<div class="botonenuevos" id="contact"><a href="">contact</a></div>
-		</div>	
+
+	</div>
+	<!--
 	<div class="grid-x">
 		<div class="large-6 small-6 cell">
 			<a href="index.html">
@@ -38,8 +44,7 @@
 			<p><span> Graphic Designer </span> </p>
 		</div>
 	</div>
-
-	<!-- <div class="botones" id="divMenu">
+	 <div class="botones" id="divMenu">
 		<div class="grid-x" id="btnAway">
 			<div class="medium-4 cell text-center" id="about">
 				<a href="">about</a>
@@ -71,13 +76,12 @@
 				</svg>
 			</div>
 		</div> -->
-	</div>
-		<div class="losProyectos">
+<!-- 		<div class="losProyectos">
 			<div class="grid-x" id="trabajos">
 				<div class="medium-6 cell works" id="reading1">
 					<div id="imagenDiv">
-						<!-- <img src="./img/readingkingdom_cover.png" id="img1"> -->
-					</div>
+						<img src="./img/readingkingdom_cover.png" id="img1"> -->
+					<!-- </div>
 					<svg version="1.1" style="cursor:pointer;" class="flecha" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="-218 442.2 16.8 11.8" style="enable-background:new -218 442.2 16.8 11.8;" xml:space="preserve">
 					<style type="text/css">
@@ -283,14 +287,17 @@
 					</svg>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	<script type="text/javascript">
 	   (function(){
 	      emailjs.init("user_zpW6ZBbIgWbvofyXZlDJM");
 	   })();
+
 	</script>
+	<script src="js/build/barba.min.js"></script>
 	<script src="./js/newback.js"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
+	<script src="./js/trans.js"></script>
+	<script type="text/javascript" src="./js/nuevomain.js"></script>
 	<script type="text/javascript" src="./js/forma.js"></script>
  	<!-- <script src="./js/back.js"></script> -->
 </body>
