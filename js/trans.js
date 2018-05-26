@@ -1,32 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('readystatechange', event => {
 
-  	Barba.Prefetch.init();
-    var FadeTransition = Barba.BaseTransition.extend({
-      start: function() {
-        Promise
-          .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this));
-      },
+	if (event.target.readyState === "complete"){
 
-      fadeOut: function() {
-        this.oldContainer.classList.toggle('fade-out');
-        return new Promise(function(resolve, reject) {
-            setTimeout(function() {
-               resolve();
-           }, 500);
-        });
-      },
+		Barba.Pjax.start();
+	  	Barba.Prefetch.init();
 
-      fadeIn: function() {
-        this.newContainer.classList.toggle('fade-in');
-        this.done();
-      }
-    });
-
-    Barba.Pjax.getTransition = function() {
-      return FadeTransition;
-    };
-
-    Barba.Pjax.start();
-    console.log('App started');
+	}
 });
