@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	Barba.Pjax.init();
   	Barba.Prefetch.init();
     var FadeTransition = Barba.BaseTransition.extend({
       start: function() {
@@ -27,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     Barba.Pjax.getTransition = function() {
       return FadeTransition;
     };
+
     Barba.Pjax.start();
     console.log('App started');
 });
