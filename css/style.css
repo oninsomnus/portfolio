@@ -117,3 +117,14 @@
     display: none;
   }
 }
+/* line 112, ../sass/style.sass */
+.aboutcontainer {
+  background-color: violet;
+  opacity: 0;
+}
+
+/* line 116, ../sass/style.sass */
+.fade-in {
+  transition: all 1s ease-in 2s;
+  opacity: 1;
+}

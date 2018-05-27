@@ -1,3 +1,11 @@
+var cuerpobarba = document.querySelector('.aboutcontainer');
+
+function transicion(){
+	new Vivus('transpur', {file: './img/transpur.svg', duration: 500, start: 'autostart', pathTimingFunction: Vivus.EASE, type: 'scenario'});
+}
+
+		
+
 document.addEventListener("DOMContentLoaded", function() {
  	
  	Barba.Pjax.start();
@@ -11,15 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
       },
  
       fadeOut: function() {
-        this.oldContainer.classList.toggle('fade-out');
-        return new Promise(function(resolve, reject) {
-            setTimeout(function() {
-               resolve();
-           }, 500);
-        });
+
       },
  
       fadeIn: function() {
+      	transicion();
+      	this.newContainer.classList.remove('aboutcontainer');
         this.newContainer.classList.toggle('fade-in');
         this.done();
       }
