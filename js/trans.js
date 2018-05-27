@@ -1,9 +1,4 @@
-document.addEventListener('readystatechange', event => {
-
-	if (event.target.readyState === "complete"){
-
-		Barba.Pjax.start();
-	  	Barba.Prefetch.init();
-
-	}
+document.addEventListener("DOMContentLoaded", function() {
+	Barba.Pjax.init();
+	Barba.Prefetch.init();
 });
