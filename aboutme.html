@@ -10,14 +10,7 @@
 </head>
 <body>
 	<main id="barba-wrapper" style="z-index: 1">
-		<div class="misBotons">
-			<div class="botonenuevos" id="about">
-				<a href="aboutme.html">about</a>
-			</div>
-			<div class="botonenuevos" id="projects"><a href="myprojects.html">projects</a></div>
-			<div class="botonenuevos" id="contact"><a href="contactme.html">contact</a></div>
-		</div>
-		<div class="barba-container" style="background-color: violet">
+		<div class="barba-container" style="background-color: violet" data-namespace="aboutme">
 			<div class="container-fluid">
 				<div class="row">
 					<div>
@@ -36,6 +29,23 @@
 						<a href="index.html">index</a>
 					</div>
 				</div>
+			</div>
+			<div class="misBotons">
+				<a href="aboutme.html" class="botonenuevos">
+					<div id="about">
+						about
+					</div>
+				</a>
+				<a href="myprojects.html" class="botonenuevos">
+					<div id="projects">
+						projects
+					</div>
+				</a>
+				<a href="contactme.html" class="botonenuevos">
+					<div id="contact">
+						contact
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

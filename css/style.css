@@ -23,27 +23,27 @@
 .botonenuevos {
   display: inline-block;
   width: 33vw;
-  height: 45px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   margin-right: -5px;
-}
-
-/* line 37, ../sass/style.sass */
-.botonenuevos a {
-  position: relative;
-  color: white;
-  padding-top: 2px;
-  top: 22%;
-}
-/* line 43, ../sass/style.sass */
-.botonenuevos a:hover, .botonenuevos a:focus {
-  color: white;
   text-decoration: none;
 }
+/* line 34, ../sass/style.sass */
+.botonenuevos:hover, .botonenuevos:focus {
+  text-decoration: none;
+  color: white;
+}
+/* line 38, ../sass/style.sass */
+.botonenuevos div {
+  position: relative;
+  color: white;
+  padding-top: 7px;
+  top: 22%;
+  height: 41px;
+}
 
-/* line 48, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 #about {
   background-color: #8864DD;
   transition: background-color 1s ease-out;
@@ -51,12 +51,12 @@
   font-size: 126%;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 #about:hover {
   background-color: #6232d2;
 }
 
-/* line 59, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 #projects {
   background-color: #FFD455;
   transition: background-color 1s ease-out;
@@ -64,12 +64,12 @@
   font-size: 126%;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 #projects:hover {
   background-color: #f5b800;
 }
 
-/* line 70, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 #contact {
   background-color: #FF495F;
   transition: background-color 1s ease-out;
@@ -77,61 +77,43 @@
   font-size: 126%;
 }
 
-/* line 77, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #contact:hover {
   background-color: #eb001b;
 }
 
 @media only screen and (min-width: 1190px) and (max-width: 1348px) {
-  /* line 82, ../sass/style.sass */
+  /* line 81, ../sass/style.sass */
   .listaIndex h3 {
     width: 45%;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1190px) {
-  /* line 88, ../sass/style.sass */
+  /* line 87, ../sass/style.sass */
   .listaIndex h3 {
     width: 60%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-  /* line 94, ../sass/style.sass */
+  /* line 93, ../sass/style.sass */
   .listaIndex h3 {
     width: 80%;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 637px) {
-  /* line 100, ../sass/style.sass */
+  /* line 99, ../sass/style.sass */
   .listaIndex h3 {
     width: 100%;
     text-align: center;
   }
 
-  /* line 105, ../sass/style.sass */
+  /* line 104, ../sass/style.sass */
   .indexLista {
     padding: 0;
   }
 
-  /* line 109, ../sass/style.sass */
+  /* line 108, ../sass/style.sass */
   .cerrar {
     display: none;
   }
 }
-
-
-
-
-/* animations */
-
-@keyframes fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.fade-out { animation: fade-out .5s ease both !important; }
-.fade-in { animation: fade-in .5s ease both; }
