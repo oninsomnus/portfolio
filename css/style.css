@@ -119,12 +119,23 @@
 }
 /* line 112, ../sass/style.sass */
 .aboutcontainer {
-  background-color: violet;
   opacity: 0;
 }
 
-/* line 116, ../sass/style.sass */
+/* line 115, ../sass/style.sass */
 .fade-in {
   transition: all 1s ease-in 2s;
   opacity: 1;
+  background-color: #8864DD;
+}
+
+/* line 120, ../sass/style.sass */
+#transpur {
+  opacity: 1;
+}
+
+/* line 123, ../sass/style.sass */
+.bodyabout {
+  transition-delay: 1.5s;
+  background-color: #8864DD;
 }
